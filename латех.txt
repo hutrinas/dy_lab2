@@ -1,0 +1,477 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[14pt]{extsizes} 
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{setspace,amsmath}
+\usepackage{epigraph} 
+\usepackage{letltxmacro}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{csquotes} 
+\usepackage[unicode, pdftex]{hyperref} 
+\usepackage{amssymb} 
+\usepackage{amsthm} 
+\usepackage[left=20mm, top=15mm, right=15mm, bottom=15mm, nohead, footskip=10mm]{geometry}
+\usepackage[active]{srcltx}
+
+\begin{document}
+\begin{titlepage}
+  \begin{center}
+    \large
+    \vspace{0.5cm}
+    \textbf{БЕЛОРУССКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ}
+    
+    \textbf{ФАКУЛЬТЕТ ПРИКЛАВДНОЙ МАТЕМАТИКИ И ИНФОРМАТИКИ}
+    \vspace{0.5cm}
+     
+    
+    \vfill
+     
+     
+    \textbf{\textsc{Лабораторная работа №2}}
+    
+    "Уравнения первого порядка в нормальной 
+    
+    дифференциальной форме"
+    \vfill
+
+    Студента 2 курса 10 группы
+    
+    Русак Анны Алексеевны
+    \vspace{3cm}
+     
+     
+\end{center}
+\vfill
+ 
+\begin{center}
+  Минск, 2022
+\end{center}
+\end{titlepage}
+
+\begin{center}
+  \textbf{Вариант 1}
+\end{center}
+
+\textbf{1.} Указать тип и метод интегрирования дифференциальных уравнений:
+
+\vspace{1cm}
+
+a) $\displaystyle (2xy^2+3x^2+\frac{1}{x^2} + \frac{3x^2}{y^2})dx + (2x^2y + 3y^2 + \frac{1}{y^2} - \frac{2x^3}{y^3})dy = 0$
+
+\vspace{0.3cm}
+
+Условие Эйлера: $\displaystyle \frac{\partial P}{\partial y} = 4xy-\frac{6x^2}{y^3}  =$ $\displaystyle \frac{\partial Q}{\partial x} = 4xy-\frac{6x^2}{y^3}$
+
+\vspace{0.3cm}
+
+\textbf{Тип: } Уранение с полным дифференциалом
+
+\textbf{Метод интегрирования: } Через КРИ-2 или нахождение общего интеграла $U(x, y) = C$, используя условия Эйлера
+
+\vspace{1cm}
+
+б) $\displaystyle xy(1+y^2)dx + (1+x^2)dy = 0$
+
+\vspace{0.3cm}
+
+$\displaystyle \frac{x}{(1+x^2)}dx +\frac{1}{y(1+y^2)}dy = 0$
+
+\vspace{0.4cm}
+
+\textbf{Тип: } Уранение с разделяющимися переменными
+
+\textbf{Метод интегрирования: } Общее решение $\displaystyle \int\limits P(x)\,dx + \int\limits Q(y)\,dy = C$
+
+\vspace{1cm}
+
+в) $\displaystyle 2xydx + (x^2-y^2)dy = 0$
+
+\vspace{0.3cm}
+
+$\displaystyle P(xt, yt)=t^2P(x, t)$ \hspace{0.7cm} $\displaystyle Q(xt, yt)=t^2Q(x, t)$
+
+\vspace{0.3cm}
+
+\textbf{Тип: } Однородное уравнение
+
+\textbf{Метод интегрирования: } Замена $\displaystyle U=\frac{y}{x}$ и сведение к линейному уравнению
+
+\vspace{1cm}
+
+г) $\displaystyle y'\ctg{x} -y=2\cos{x}^2\ctg{x}$
+
+\vspace{0.3cm}
+
+\textbf{Тип: } Линейное по $y$ уравнение
+
+\textbf{Метод интегрирования: } Метод Лагранжа, метод Бернулли или через интегрирующий множитель
+
+\vspace{1cm}
+
+д) $\displaystyle x^2y^2y'+xy^3=a^2,$   $ a \in \mathbb{R}$
+
+\vspace{0.3cm}
+
+$\displaystyle y'+y\frac{1}{x}=a^2x^{-2}y^{-2}$
+
+\vspace{0.3cm}
+
+\textbf{Тип: } Уравнение Бернулли $m=-2$
+
+\textbf{Метод интегрирования: } Замена $U=y^{1-m}$ и сведение к линейному уравнению
+
+\vspace{1cm}
+
+е) $\displaystyle y'=4y^2-4x^2y+x^4+x+4$
+
+\vspace{0.3cm}
+
+\textbf{Тип: } Уравнение Риккати
+
+\textbf{Метод интегрирования: } Необходимо найти частное решение, после чего делается замена $\displaystyle y = U+y_0$, где $y_0-$ частное решение. Полученное уравнение сводится к уравнению Бернулли
+
+\vspace{1cm}
+
+ж) $\displaystyle yx'-2x+y^2=0$
+
+\vspace{0.3cm}
+
+\textbf{Тип: } Линейное по $x$ уравнение
+
+\textbf{Метод интегрирования: } Метод Лагранжа, метод Бернулли или через интегрирующий множитель
+
+\vspace{1cm}
+
+\textbf{2.} Проинтегрировать уравнение, установив вид интегрируещего множителя:
+
+\vspace{0.3cm}
+
+$\displaystyle(x^3(1+\ln{x})+2y)dx+x(3y^2x^2-1)dy=0$ ; $\mu=\mu(y)$, $\mu=\mu(x)$
+
+\vspace{0.3cm}
+
+$\displaystyle \frac{P'_y-Q'_x}{Q}=\frac{2-9y^2x^2+1}{x(3y^3x^2-1)}=\frac{-3(3y^2x^2-1)}{x(3y^3x^2-1}=-\frac{3}{x}=f(x)$
+
+\vspace{0.3cm}
+
+$\displaystyle \frac{\mu'}{\mu}=-\frac{3}{x};$ \hspace{0.7cm} $\displaystyle \frac{d\mu}{\mu}=-\frac{3dx}{x};$ \hspace{0.7cm} $\displaystyle \mu=x^{-3}$
+
+\vspace{0.3cm}
+
+$\displaystyle ((1+\ln{x})+\frac{2y}{x^3})dx+(3y^2-\frac{1}{x^2})dy=0$
+
+\vspace{0.3cm}
+
+Условие Эйлера: $\displaystyle \frac{\partial P}{\partial y} = \frac{2}{x^3}  =$ $\displaystyle \frac{\partial Q}{\partial x} = \frac{2}{x^3}$
+
+\vspace{0.3cm}
+
+$\displaystyle \frac{\partial U}{\partial x} = 1+\ln{x}+\frac{2y}{x^3} $ \hspace{0.7cm} $\displaystyle \frac{\partial U}{\partial y} = 3y^2-\frac{1}{x^2}$
+
+\vspace{0.3cm}
+
+$\displaystyle U=\int\limits 3y^2-\frac{1}{x^2}\,dy+\phi(x)=y^3-\frac{y}{x^2}+\phi(x)$
+
+\vspace{0.3cm}
+
+$\displaystyle \frac{\partial U}{\partial x}=\frac{2y}{x^3}+\phi'(x)=1+\ln{x}+\frac{2y}{x^3}$
+
+\vspace{0.3cm}
+
+$\displaystyle \phi'(x)=1+\ln(x)$ $\Rightarrow$ $\displaystyle \phi(x)=x+\int\limits \ln{x}\,dx=\begin{bmatrix}
+       u=\ln{x} & d\upsilon=dx           \\[0.3em]
+       du=\frac{dx}{x} & \upsilon=x           
+     \end{bmatrix}=x+x\ln{x}-$
+     
+\vspace{0.3cm}
+     
+$\displaystyle -\int\limits 1\,dx=x+x\ln{x}-x+C=x\ln{x}+C$
+
+\vspace{0.3cm}
+     
+$\displaystyle U=y^3+\frac{y}{x^2}+x\ln{x}+C$
+
+\vspace{0.3cm}
+     
+Дополнительное решение $\displaystyle x=0$
+
+\vspace{0.3cm}
+
+\textbf{Ответ: } $\displaystyle U=y^3+\frac{y}{x^2}+x\ln{x}+C$, $\displaystyle x=0$
+
+\vspace{1cm}
+
+\textbf{3.} Преобразовать уравнение $\displaystyle y(x+\ln{y})+(x-\ln{y})y'=0$ с помощью подстановки $\displaystyle \ln{y}=\eta$. Указать тип и метод интегрирования полученного уравнения.
+
+\vspace{0.3cm}
+
+$\displaystyle y=e^{\eta}$; \hspace{0.7cm} $dy=e^{\eta}d\eta$
+
+\vspace{0.3cm}
+
+$\displaystyle e^{\eta}(x+\eta)dx+(x-\eta)e^{\eta}d\eta=0$
+
+\vspace{0.3cm}
+
+$\displaystyle (x+\eta)dx+(x-\eta)d\eta=0$
+
+\vspace{0.3cm}
+
+Условие Эйлера: $\displaystyle \frac{\partial P}{\partial \eta} = 1  =$ $\displaystyle \frac{\partial Q}{\partial x} = 1$
+
+\vspace{0.3cm}
+
+\textbf{Тип: } Уранение с полным дифференциалом
+
+\textbf{Метод интегрирования: } Через КРИ-2 или нахождение общего интеграла $U(x, \eta)=C$, используя условия Эйлера
+
+\vspace{1cm}
+
+\textbf{4.} Решить задачу Коши $\displaystyle dy=(y-2)^{2/3}dx$, $\displaystyle y|_{x=1}=2$
+
+\vspace{0.3cm}
+
+$\displaystyle \frac{dy}{(y-2)^{2/3}}=dx$
+
+\vspace{0.3cm}
+
+$\displaystyle 3(y-2)^{1/3}=x+C$
+
+\vspace{0.3cm}
+
+$\displaystyle (y-2)^{1/3}=\frac{x}{3}+C_1$
+
+\vspace{0.3cm}
+
+$\displaystyle y-2=(\frac{x}{3}+C_1)^3$; \hspace{0.7cm} $\displaystyle y=(\frac{x}{3}+C_1)^3+2$
+
+\vspace{0.3cm}
+
+$\displaystyle y|_{x=1}=(\frac{1}{3}+C_1)^3+2=2$ $\Rightarrow$ $C_1=-\frac{1}{3}$ $\Rightarrow$ $\displaystyle y=(\frac{x}{3}-\frac{1}{3})^3+2$
+
+\vspace{0.3cm}
+
+\textbf{Ответ: } $\displaystyle y=(\frac{x}{3}-\frac{1}{3})^3+2$
+
+\vspace{2cm}
+
+\begin{center}
+  \textbf{Вариант 2}
+\end{center}
+
+\vspace{0.5cm}
+
+\textbf{1.} Указать тип и метод интегрирования дифференциальных уравнений:
+
+\vspace{0.3cm}
+
+a) $\displaystyle xy(1+y^2)dx - (1+x^2)dy = 0$
+
+\vspace{0.4cm}
+
+$\displaystyle \frac{x}{(1+x^2)}dx - \frac{1}{y(1+y^2)}dy = 0$
+
+\vspace{0.3cm}
+
+\textbf{Тип: } Уранение с разделяющимися переменными
+
+\textbf{Метод интегрирования: } Общее решение $\displaystyle \int\limits P(x)\,dx + \int\limits Q(y)\,dy = C$
+
+\vspace{1cm}
+
+б) $\displaystyle \frac{x^2dy-y^2dx}{(x-y)^2} = 0$
+
+\vspace{0.4cm}
+
+$\displaystyle \frac{x^2dy}{(x-y)^2}-\frac{y^2dx}{(x-y)^2} = 0$
+
+\vspace{0.4cm}
+
+Условие Эйлера: 
+
+\vspace{0.3cm}
+
+$\displaystyle \frac{\partial P}{\partial y}=\frac{-2y(x-y)^2+2(x-y)(-y^2)}{(x-y)^4}=\frac{(x-y)(-2xy+2y^2-2y^2)}{(x-y)^4}=-\frac{2xy}{(x-y)^3}$ 
+
+\vspace{0.3cm}
+
+$\displaystyle \frac{\partial Q}{\partial x}=\frac{2x(x-y)^2-2(x-y)x^2}{(x-y)^4}=\frac{(x-y)(2x^2-2xy-2x^2)}{(x-y)^4}=-\frac{2xy}{(x-y)^3}$ 
+
+\vspace{0.3cm}
+
+$\displaystyle \frac{\partial P}{\partial y}=\displaystyle \frac{\partial Q}{\partial x}$
+
+\vspace{0.3cm}
+
+\textbf{Тип: } Уранение с полным дифференциалом
+
+\textbf{Метод интегрирования: } Через КРИ-2 или нахождение общего интеграла $U(x,y)=C$, используя условия Эйлера
+
+\vspace{1cm}
+
+в) $\displaystyle (x^2+y^2)dx - 2xydy = 0$
+
+\vspace{0.3cm}
+
+$\displaystyle P(xt, yt)=t^2P(x, t)$ \hspace{0.7cm} $\displaystyle Q(xt, yt)=t^2Q(x, t)$
+
+\vspace{0.3cm}
+
+\textbf{Тип: } Однородное уравнение
+
+\textbf{Метод интегрирования: } Замена $\displaystyle U=\frac{y}{x}$ и сведение к линейному уравнению
+
+\vspace{1cm}
+
+г) $\displaystyle (4-x^2)y'+xy=4$
+
+\vspace{0.3cm}
+
+\textbf{Тип: } Линейное по $y$ уравнение
+
+\textbf{Метод интегрирования: } Метод Лагранжа, метод Бернулли или через интегрирующий множитель
+
+\vspace{1cm}
+
+д) $\displaystyle y'\tg{x}+2y\tg^2{x}=ay^2,$   $ a \in \mathbb{R}$
+
+\vspace{0.3cm}
+
+\textbf{Тип: } Уравнение Бернулли $m=2$
+
+\textbf{Метод интегрирования: } Замена $U=y^{1-m}$ и сведение к линейному уравнению
+
+\vspace{1cm}
+
+е) $\displaystyle xy'=x^2y^2-y+1$
+
+\vspace{0.3cm}
+
+\textbf{Тип: } Уравнение Риккати
+
+\textbf{Метод интегрирования: } Необходимо найти частное решение, после чего делается замена $\displaystyle y = U+y_0$, где $y_0-$ частное решение. Полученное уравнение сводится к уравнению Бернулли
+
+\vspace{1cm}
+
+ж) $\displaystyle dx+(x+y^2)dy=0$
+
+\vspace{0.3cm}
+
+$\displaystyle x'+x+y^2=0$
+
+\vspace{0.3cm}
+
+\textbf{Тип: } Линейное по $x$ уравнение
+
+\textbf{Метод интегрирования: } Метод Лагранжа, метод Бернулли или через интегрирующий множитель
+
+\vspace{1cm}
+
+\textbf{2.} Проинтегрировать уравнение, установив вид интегрируещего множителя:
+
+\vspace{0.3cm}
+
+$\displaystyle y^2(x-y)dx+(1-xy^2)dy=0$ ; $\mu=\mu(y)$, $\mu=\mu(x)$
+
+\vspace{0.3cm}
+
+$\displaystyle \frac{P'_y-Q'_x}{Q}=\frac{2xy-3y^2+y^2}{1-xy^2}\neq f(x)$
+
+\vspace{0.3cm}
+
+$\displaystyle \frac{Q'_x-P'_y}{P}=\frac{2y^2-2xy}{y^2(x-y)}=\frac{2y(y-x)}{y^2(x-y)}=-\frac{2}{y}=f(y)$
+
+\vspace{0.3cm}
+
+$\displaystyle \frac{\mu'}{\mu}=-\frac{2}{y};$ \hspace{0.7cm} $\displaystyle \frac{d\mu}{\mu}=-\frac{2dx}{y};$ \hspace{0.7cm} $\displaystyle \mu=y^{-2}$
+
+\vspace{0.3cm}
+
+$\displaystyle (x-y)dx+(\frac{1}{y^2}-x)dy=0$
+
+\vspace{0.3cm}
+
+Условие Эйлера: $\displaystyle \frac{\partial P}{\partial y} = -1  =$ $\displaystyle \frac{\partial Q}{\partial x} = -1$
+
+\vspace{0.3cm}
+
+$\displaystyle \frac{\partial U}{\partial x} = x-y $ \hspace{0.7cm} $\displaystyle \frac{\partial U}{\partial y} = \frac{1}{y^2}-x$
+
+\vspace{0.3cm}
+
+$\displaystyle U=\int\limits x-y\,dx+\phi(y)=\frac{x^2}{2}-xy+\phi(y)$
+
+\vspace{0.3cm}
+
+$\displaystyle \frac{\partial U}{\partial y}=-x+\phi'(y)=\frac{1}{y^2}-x$ $\Rightarrow$ $\phi'(y)=\frac{1}{y^2}$
+
+\vspace{0.3cm}
+
+$\displaystyle \phi(y)=-\frac{1}{y}+C$
+     
+\vspace{0.3cm}
+     
+$\displaystyle U=\frac{x^2}{2}-xy-\frac{1}{y}+C$
+
+\vspace{0.3cm}
+     
+Дополнительное решение $\displaystyle y=0$
+
+\vspace{0.3cm}
+
+\textbf{Ответ: } $\displaystyle U=\frac{x^2}{2}-xy-\frac{1}{y}+C$, $\displaystyle y=0$
+
+\vspace{1cm}
+
+\textbf{3.} Преобразовать уравнение $\displaystyle y'=x+ e^{x+2y}$ с помощью подстановки $\displaystyle \eta=e^{-2y}$. Указать тип и метод интегрирования полученного уравнения.
+
+\vspace{0.3cm}
+
+$\displaystyle \ln{\eta}=-2y$; \hspace{0.7cm} $\displaystyle y=-\frac{1}{2}\ln{\eta}$; \hspace{0.7cm} $\displaystyle dy=-\frac{1}{2\eta}d\eta$
+
+\vspace{0.3cm}
+
+$\displaystyle -\frac{1}{2\eta}d\eta=(x+\frac{e^x}{\eta})dx$
+
+\vspace{0.3cm}
+
+$\displaystyle d\eta=(-2\eta x-2e^x)dx$
+
+\vspace{0.3cm}
+
+$\displaystyle \eta'+2\eta x=-2e^x$
+
+\vspace{0.3cm}
+
+\textbf{Тип: } Линейное по $\eta$ уравнение
+
+\textbf{Метод интегрирования: } Метод Лагранжа, метод Бернулли или через интегрирующий множитель
+
+\vspace{1cm}
+
+\textbf{4.} Решить задачу Коши $\displaystyle dy=x \sqrt{y}dx$, $\displaystyle y|_{x=1}=0$
+
+\vspace{0.3cm}
+
+$\displaystyle \frac{dy}{\sqrt{y}}=xdx$
+
+\vspace{0.3cm}
+
+$\displaystyle 2 \sqrt{y}=\frac{x^2}{2}+C$
+
+\vspace{0.3cm}
+
+$\displaystyle y=(\frac{x^2}{4}+C_1)^2$
+
+\vspace{0.3cm}
+
+$\displaystyle y|_{x=1}=(\frac{1}{4}+C_1)^2=0$ $\Rightarrow$ $C_1=-\frac{1}{4}$ $\Rightarrow$ $\displaystyle y=(\frac{x^2}{4}-\frac{1}{4})^2$
+
+\vspace{0.3cm}
+
+\textbf{Ответ: } $\displaystyle y=(\frac{x^2}{4}-\frac{1}{4})^2$
+
+\end{document}
